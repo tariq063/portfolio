@@ -391,14 +391,16 @@
             </div>
           </div>
           <div class="footer__form">
-            <form action="/">
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="input__row">
-                <input type="text" placeholder="Your Name" />
-                <input type="text" placeholder="Your Email" />
+                <input type="hidden" name="access_key" value="7c461e73-807d-46bc-a4f8-ce87f852b186">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
               </div>
-              <textarea placeholder="Your Message"></textarea>
-              <button class="btn btn__primary">Send Message</button>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit" class="btn btn__primary">Send Message</button>
             </form>
+            
           </div>
         </div>
       </div>
